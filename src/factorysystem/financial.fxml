@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="610.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="factorysystem.FinancialController">
+   <children>
+      <AnchorPane fx:id="rootPane" layoutX="230.0" layoutY="60.0" prefHeight="550.0" prefWidth="650.0" />
+      <Pane prefHeight="60.0" prefWidth="880.0" style="-fx-background-color: rgb(0,162,232);">
+         <children>
+            <Label layoutX="77.0" layoutY="14.0" prefHeight="32.0" prefWidth="432.0" text="Factory Management System (Financial)" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="22.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane layoutY="169.0" prefHeight="443.0" prefWidth="230.0" style="-fx-background-color: rgb(0,162,232);">
+         <children>
+            <Label layoutX="69.0" layoutY="27.0" onMousePressed="#computeWagesButtonAction" text="Wages" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="73.0" layoutY="101.0" onMousePressed="#computeProfitMaterialButtonAction" text="Profit" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="169.0" onMousePressed="#orderRowMaterialButtonAction" prefHeight="32.0" prefWidth="143.0" text="Raw material" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="67.0" layoutY="238.0" onMousePressed="#sellProductMaterialButtonAction" prefHeight="32.0" prefWidth="98.0" text="Products" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="71.0" layoutY="372.0" onMouseClicked="#ExitActionButton" prefHeight="32.0" prefWidth="91.0" text="Exit" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="304.0" onMousePressed="#ReportActionButton" prefHeight="32.0" prefWidth="91.0" text="Report" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="109.0" fitWidth="230.0" layoutY="60.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Icons/financial.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

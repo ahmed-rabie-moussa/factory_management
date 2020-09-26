@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="529.0" style="-fx-background-color: rgb(200,191,231);" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="factorysystem.LoginController">
+   <children>
+      <Pane layoutX="36.0" layoutY="30.0" prefHeight="344.0" prefWidth="453.0" style="-fx-background-color: #ffffff; -fx-background-radius: 35; -fx-border-radius: 35;">
+         <children>
+            <JFXTextField fx:id="userName" focusColor="#4dc3e0" layoutX="83.0" layoutY="52.0" maxWidth="390.0" minWidth="232.0" prefHeight="70.0" prefWidth="296.0" promptText="UserName" unFocusColor="#9a9a9a">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="21.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="password" focusColor="#4dc3e0" layoutX="86.0" layoutY="157.0" maxWidth="289.0" minWidth="257.0" prefHeight="70.0" prefWidth="289.0" promptText="Password" unFocusColor="#9a9a9a">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="22.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton buttonType="RAISED" layoutX="284.0" layoutY="261.0" onAction="#loginButtonAction" prefHeight="70.0" prefWidth="155.0" ripplerFill="#4ec1e7" style="-fx-background-color: rgb(200,191,231);" text="Login" textFill="#464646">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="11.0" layoutY="261.0" onAction="#exitButtonAction" prefHeight="70.0" prefWidth="155.0" ripplerFill="#4ec1e7" style="-fx-background-color: rgb(200,191,231);" text="Exit" textFill="#4a4141">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+   <effect>
+      <Blend />
+   </effect>
+</AnchorPane>

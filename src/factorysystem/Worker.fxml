@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="factorysystem.WorkerController">
+   <children>
+      <Label layoutX="13.0" layoutY="24.0" prefHeight="69.0" prefWidth="240.0" text="Elapsed Time :">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.42613636363636365" centerY="0.5" radius="0.9268292682926829">
+               <stops>
+                  <Stop color="#940303" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="time" alignment="CENTER" layoutX="43.0" layoutY="141.0" opacity="0.83" prefHeight="92.0" prefWidth="519.0" text="Start Working" textFill="#22056b" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="61.0" />
+         </font>
+      </Label>
+      <Button layoutX="215.0" layoutY="296.0" mnemonicParsing="false" onAction="#LogoutButtonAction" prefHeight="69.0" prefWidth="170.0" text="Logout">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="35.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.9563106796116505" startY="0.470873786407767">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Label layoutX="509.0" layoutY="14.0" onMousePressed="#ReportActionButton" text="Mail">
+         <font>
+            <Font name="Comic Sans MS Bold" size="35.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

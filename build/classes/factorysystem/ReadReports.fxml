@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="763.0" prefWidth="747.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="factorysystem.ReadReportsController">
+   <children>
+      <TableView fx:id="ReportTable" layoutY="-2.0" prefHeight="763.0" prefWidth="747.0">
+        <columns>
+          <TableColumn fx:id="fromColumn" prefWidth="111.0" text="From" />
+          <TableColumn fx:id="toColumn" prefWidth="109.0" text="To" />
+            <TableColumn fx:id="descriptionColumn" prefWidth="525.0" text="Description" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

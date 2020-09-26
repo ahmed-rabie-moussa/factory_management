@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="1086.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="1086.0" style="-fx-background-color: rgb(239,228,176);" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="factorysystem.SupervisorController">
+   <children>
+      <Button fx:id="RateButton" layoutX="23.0" layoutY="527.0" mnemonicParsing="false" onAction="#RateActionButton" prefHeight="25.0" prefWidth="84.0" text="Rate">
+         <font>
+            <Font name="Comic Sans MS" size="19.0" />
+         </font></Button>
+      <Button layoutX="870.0" layoutY="540.0" mnemonicParsing="false" onAction="#ClearActionButton" prefHeight="25.0" prefWidth="84.0" text="Clear">
+         <font>
+            <Font name="Comic Sans MS" size="19.0" />
+         </font></Button>
+      <Button layoutX="978.0" layoutY="540.0" mnemonicParsing="false" onAction="#ExitActionButton" prefHeight="25.0" prefWidth="84.0" text="Exit">
+         <font>
+            <Font name="Comic Sans MS" size="19.0" />
+         </font></Button>
+      <Button layoutX="783.0" layoutY="56.0" mnemonicParsing="false" onAction="#SearchActionButton" prefHeight="25.0" prefWidth="96.0" text="Search">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font></Button>
+      <ComboBox fx:id="comboType" layoutX="23.0" layoutY="58.0" onAction="#comboTypeAction" prefWidth="150.0" promptText="Select type" />
+      <ComboBox fx:id="comboSearch" layoutX="209.0" layoutY="58.0" prefWidth="150.0" promptText="Search by" />
+      <TableView fx:id="supervisorTable" editable="true" layoutY="100.0" prefHeight="59.0" prefWidth="1086.0">
+         <columns>
+            <TableColumn fx:id="IDColumn" minWidth="0.0" prefWidth="0.0" text="ID" />
+            <TableColumn fx:id="NameColumn" editable="false" prefWidth="200.0" text="userName" />
+            <TableColumn fx:id="AddressColumn" editable="false" prefWidth="192.0" text="Address" />
+            <TableColumn fx:id="hoursWorkedColumn" editable="false" prefWidth="170.0" text="HoursWorked" />
+            <TableColumn fx:id="sectionColumn" editable="false" prefWidth="95.0" text="Section" />
+            <TableColumn fx:id="phoneNumberColumn" editable="false" prefWidth="131.0" text="Phone Number" />
+            <TableColumn fx:id="salaryColumn" editable="false" prefWidth="101.0" text="Salary" />
+            <TableColumn fx:id="jobIDColumn" editable="false" prefWidth="115.0" text="JobID" />
+            <TableColumn fx:id="ratingColumn" prefWidth="81.0" sortType="DESCENDING" text="Rating" />
+            <TableColumn fx:id="passwordColumn" minWidth="0.0" prefWidth="0.0" text="password" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtKey" layoutX="399.0" layoutY="58.0" promptText="Enter keyword" />
+      <Pane prefHeight="46.0" prefWidth="1086.0" style="-fx-background-color: rgb(185,122,87);">
+         <children>
+            <Label layoutX="22.0" layoutY="7.0" prefHeight="33.0" prefWidth="580.0" text="Factory Management System ( Supervisor )" textFill="#ebe7d9">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="965.0" layoutY="7.0" onMouseClicked="#ReportActionButton" prefHeight="33.0" prefWidth="96.0" text="Reports" textFill="#ebe7d9">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TableView fx:id="rawTable" editable="true" layoutY="159.0" prefHeight="66.0" prefWidth="1086.0">
+        <columns>
+          <TableColumn fx:id="rowMaterialIDColumn" editable="false" minWidth="0.0" prefWidth="69.0" text="ID" />
+          <TableColumn fx:id="rowMaterialNameColumn" editable="false" prefWidth="165.0" text="Name" />
+            <TableColumn fx:id="supplierIDColumn" editable="false" prefWidth="94.0" text="Supplier ID" />
+            <TableColumn fx:id="unitPriceColumn" editable="false" prefWidth="99.0" text="unitPrice" />
+            <TableColumn fx:id="quantityColumn" editable="false" prefWidth="154.0" text="quantity" />
+            <TableColumn fx:id="storageMethodColumn" editable="false" prefWidth="424.0" text="Storage Method" />
+            <TableColumn fx:id="rateColumn" sortType="DESCENDING" text="Rating" />
+        </columns>
+      </TableView>
+      <TableView fx:id="productTable" editable="true" layoutX="-1.0" layoutY="225.0" prefHeight="66.0" prefWidth="1086.0">
+        <columns>
+          <TableColumn fx:id="productIDColumn" editable="false" minWidth="0.0" prefWidth="48.0" text="ID" />
+          <TableColumn fx:id="productNameColumn" editable="false" prefWidth="342.0" text="Name" />
+            <TableColumn fx:id="distributorIDColumn" editable="false" prefWidth="207.0" text="Distributor ID" />
+            <TableColumn fx:id="pUnitPriceColumn" editable="false" prefWidth="228.0" text="unitPrice" />
+            <TableColumn fx:id="pQuantityColumn" editable="false" prefWidth="180.0" text="quantity" />
+            <TableColumn fx:id="pRatingColumn" prefWidth="79.0" sortType="DESCENDING" text="Rating" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtNewRate" layoutX="140.0" layoutY="525.0" prefHeight="46.0" prefWidth="187.0" promptText="New Rate">
+         <font>
+            <Font name="Comic Sans MS Bold" size="21.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
